@@ -1,22 +1,23 @@
 import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
-import { Skills_1, Skills_2 } from '../skills';
+import { achievements_1, achievements_2 } from '../achievements';
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  selector: 'app-achievements',
+  templateUrl: './achievements.component.html',
+  styleUrls: ['./achievements.component.scss']
 })
 
-export class SkillsComponent extends AppComponent {
-  private _skills1 = Skills_1;
-  private _skills2 = Skills_2;
+export class achievementsComponent extends AppComponent {
+  private _achievements1 = achievements_1;
+  private _achievements2 = achievements_2;
+achievement_2: any;
 
-  public get skills1(): typeof Skills_1 {
-    return this._skills1;
+  public get achievements1(): typeof achievements_1 {
+    return this._achievements1;
   }
 
-  public get skills2(): typeof Skills_2 {
-    return this._skills2;
+  public get achievements2(): typeof achievements_2 {
+    return this._achievements2;
   }
 }

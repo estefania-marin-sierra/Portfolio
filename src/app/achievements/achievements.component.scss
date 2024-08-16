@@ -1,4 +1,4 @@
-#skills-section{
+#achievements-section{
   width: 100%;
   min-height: 50vh;
   text-align: center;
@@ -15,20 +15,20 @@ li {
   text-align: left;
 }
 
-.container-skills {
+.container-achievements {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 4px;
   margin: 32px 24px 16px 24px;
 }
 
-.container-skill {
+.container-achievements {
   display: initial;
   grid-template-rows: 150px 48px auto;
   justify-content: center;
 }
 
-.skill-name {
+.achievement-name {
   font-weight: bold;
   margin: 16px;
   margin-bottom: 10px;
@@ -58,19 +58,19 @@ li {
     font-size: 14px;
   }
 
-  .container-skills {
+  .container-achievements {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 4px;
     margin: 16px 8px;
   }
 
-  .container-skill {
+  .container-achievement {
     grid-template-rows: auto auto;
     margin: 0px;
   }
 
-  .skill-name{
+  .achievement-name{
     margin: 0;
     text-align: center;
   }

@@ -46,6 +46,7 @@ import { SafePipe } from './pipe/safe.pipe';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsComponent } from './skills/skills.component';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { SkillsComponent } from './skills/skills.component';
     FooterComponent,
     AboutComponent,
     SkillsComponent,
+    AchievementsComponent
     DialogDetailComponent,
     SafePipe,
   ],

@@ -1,4 +1,4 @@
-export const Skills_1 = [
+export const achievements_1 = [
   {
     icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/management.svg',
     name: 'Management',
@@ -22,7 +22,7 @@ export const Skills_1 = [
   },
 ]
 
-export const Skills_2 = [
+export const achievements_2 = [
   {
     icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/project.svg',
     name: 'Project management',
