@@ -1,0 +1,34 @@
+<div id="about-section">
+  <div class="container">
+    <mat-card class="custom-card">
+      <mat-card-header>
+        <div mat-card-avatar class="custom-header-image"></div>
+        <mat-card-title>Estefania Marin Sierra</mat-card-title>
+        <mat-card-subtitle *ngIf="isFrench">Chef de projet senior</mat-card-subtitle>
+        <mat-card-subtitle *ngIf="!isFrench">Senior project manager</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../assets/images/Fanny.jpg" alt="Hobbie">
+
+      <mat-card-content>
+        <p *ngIf="isFrench">🎓Université McGill 2017 <br> Maîtrise en pharmacologie</p>
+        <p *ngIf="isFrench">🎓UAA 2014 <br> HBSc Biotechnologie</p>
+        <p *ngIf="isFrench">🎓CBTis 39 2010 <br> Diplôme d'études techniques en chimie</p>
+        <p *ngIf="!isFrench">🎓McGill University 2017 <br> MSc Pharmacology</p>
+        <p *ngIf="!isFrench">🎓UAA 2014 <br> HBSc Biotechnology</p>
+        <p *ngIf="!isFrench">🎓CBTis 39 2010<br> Chemistry technical diploma</p>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="custom-about">
+      <h1 class="custom-hello" *ngIf="isFrench">Bonjour,</h1>
+      <p class="custom-sentence" *ngIf="isFrench">Je suis une chef de projet multidisciplinaire avec expérience en introduction commerciale.</p>
+      <p class="custom-sentence" *ngIf="isFrench">J'ai géré des projets de <strong> valeur de 5M+ CAD, durée de 9+ mois et 20 membres d’équipe.</strong></p>
+      <p class="custom-sentence" *ngIf="isFrench">J'ai de l'expérience dans la <strong>planification stratégique</strong> et la <strong>communication</strong> avec des membres d'équipe et des clients.</p>
+
+      <h1 class="custom-hello" *ngIf="!isFrench">Hello,</h1>
+      <p class="custom-sentence" *ngIf="!isFrench">I'm a multidisciplinary project manager with experience in commercial introduction.</p>
+      <p class="custom-sentence" *ngIf="!isFrench">I have managed projects of <strong>5+M CAD in value, 9+ months of duration and 20+ team members.</strong></p>
+      <p class="custom-sentence" *ngIf="!isFrench">I have experience in <strong>strategic</strong> planning, and <strong>communication</strong> with team members and clients.</p>
+    </div>
+  </div>
+</div>

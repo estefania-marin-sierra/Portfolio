@@ -1,0 +1,41 @@
+<mat-toolbar class="header-toolbar">
+  <nav class="nav-header">
+    <div class="logo">
+      <a>Estefania Marin Sierra</a>
+    </div>
+
+    <ul class="menu">
+      <li *ngIf="isFrench">
+        <button class="profile-link header-button
+        " (click)="ScrollTo('skills-section')">COMPÉTENCES</button>
+      </li>
+      <li *ngIf="isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">INITIATIVES</button>
+      </li>
+      <li *ngIf="isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">RÉALISATIONS</button>
+      </li>
+      <li *ngIf="isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACTEZ</button>
+      </li>
+      <li *ngIf="isFrench">
+        <button class="profile-link header-button-last" (click)="ScrollTo('contact-section')">EN</button>
+      </li>
+      <li *ngIf="!isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">SKILLS</button>
+      </li>
+      <li *ngIf="!isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">INITIATIVES</button>
+      </li>
+      <li *ngIf="!isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">ACHIEVEMENTS</button>
+      </li>
+      <li *ngIf="!isFrench">
+        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACT</button>
+      </li>
+      <li *ngIf="!isFrench">
+        <button class="profile-link header-button-last" (click)="ScrollTo('contact-section')">FR</button>
+      </li>
+    </ul>
+  </nav>
+</mat-toolbar>

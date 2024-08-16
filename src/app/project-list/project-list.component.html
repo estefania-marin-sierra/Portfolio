@@ -1,0 +1,12 @@
+<div id="projects-section">
+  <h1 class="title-french" *ngIf="isFrench">
+    <span class="title-text">INITIATIVES</span>
+  </h1>
+  <h1 class="title" *ngIf="!isFrench">
+    <span class="title-text">INITIATIVES</span>
+  </h1>
+
+  <div class="spacing-header" *ngFor="let project of projects">
+    <app-project [project]="project"></app-project>
+  </div>
+</div>

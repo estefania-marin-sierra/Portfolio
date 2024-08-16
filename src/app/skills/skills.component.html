@@ -1,0 +1,38 @@
+<div id="skills-section">
+  <h1 class="title-french" *ngIf="isFrench">
+    <span class="title-text">COMPÉTENCES</span>
+  </h1>
+  <h1 class="title" *ngIf="!isFrench">
+    <span class="title-text">SKILLS</span>
+  </h1>
+
+  <div class="container-skills">
+    <div class="container-skill" *ngFor="let skill_1 of skills1">
+      <div><img src={{skill_1.icon}} alt={{skill_1.name}} /></div>
+      <div class="skill-name">
+        <ng-container *ngIf="isFrench">{{skill_1.nameFrench}}</ng-container>
+        <ng-container *ngIf="!isFrench">{{skill_1.name}}</ng-container>
+      </div>
+
+      <div class="tech">
+        <ul *ngIf="isFrench"><li *ngFor="let tool of skill_1.techFrench">{{tool}}</li></ul>
+        <ul *ngIf="!isFrench"><li *ngFor="let tool of skill_1.tech">{{tool}}</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-skills">
+    <div class="container-skill" *ngFor="let skill_2 of skills2">
+      <div><img src={{skill_2.icon}} alt={{skill_2.name}} /></div>
+      <div class="skill-name">
+          <ng-container *ngIf="isFrench">{{skill_2.nameFrench}}</ng-container>
+          <ng-container *ngIf="!isFrench">{{skill_2.name}}</ng-container>
+  </div>
+
+      <div class="tech">
+        <ul *ngIf="isFrench"><li *ngFor="let tool of skill_2.techFrench">{{tool}}</li></ul>
+        <ul *ngIf="!isFrench"><li *ngFor="let tool of skill_2.tech">{{tool}}</li></ul>
+      </div>
+    </div>
+  </div>
+</div>

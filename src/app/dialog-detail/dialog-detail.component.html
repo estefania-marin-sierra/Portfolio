@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>
+  <ng-container *ngIf="isFrench">{{data.titleFrench}}</ng-container>
+  <ng-container *ngIf="!isFrench">{{data.title}}</ng-container>
+</h2>
+
+<mat-dialog-content>
+      <div class="content-description-title"><strong>Description</strong></div>
+
+    <div class="content-description" *ngIf="isFrench">{{data.descriptionFrench}}</div>
+    <div class="content-tasks-title" *ngIf="isFrench"><strong>Fonctionnalités</strong></div>
+    <div class="content-task" *ngIf="isFrench">
+      <ul class="content-tasks-list">
+        <li *ngFor="let task of data.tasksFrench">{{task}}</li>
+      </ul>
+    </div>
+
+    <div class="content-description" *ngIf="!isFrench">{{data.description}}</div>
+    <div class="content-tasks-title" *ngIf="!isFrench"><strong>Features</strong></div>
+    <div class="content-task" *ngIf="!isFrench">
+      <ul class="content-tasks-list">
+        <li *ngFor="let task of data.tasks">{{task}}</li>
+      </ul>
+    </div>
+
+    <div class="content-image" *ngFor="let image of data.images">
+      <img src={{image}}>
+    </div>
+   
+    <div class="content">
+      <div class="content-video_container" *ngIf="data.video">
+        <iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <div>
+    <button mat-button mat-dialog-close class="button-close">Close</button>
+  </div>
+</mat-dialog-actions>
