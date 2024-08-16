@@ -8,3 +8,5 @@ import { AppComponent } from '../app.component';
 })
 
 export class AboutComponent extends AppComponent {}
+
+

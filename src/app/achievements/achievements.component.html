@@ -1,6 +1,6 @@
-<div id="acchievements-section">
+<div id="achievements-section">
   <h1 class="title-french" *ngIf="isFrench">
-    <span class="title-text">COMPÉTENCES</span>
+    <span class="title-text">RÉALISATIONS</span>
   </h1>
   <h1 class="title" *ngIf="!isFrench">
     <span class="title-text">ACHIEVEMENTS</span>
@@ -24,15 +24,14 @@
   <div class="container-achievements">
     <div class="container-achievement" *ngFor="let achievements_2 of achievements2">
       <div><img src={{achievements_2.icon}} alt={{achievements_2.name}} /></div>
-      <div class="achievement-name">
-          <ng-container *ngIf="isFrench">{{achievement_2.nameFrench}}</ng-container>
-          <ng-container *ngIf="!isFrench">{{achievement_2.name}}</ng-container>
-  </div>
+      <div class="achievements-name">
+        <ng-container *ngIf="isFrench">{{achievements_2.nameFrench}}</ng-container>
+        <ng-container *ngIf="!isFrench">{{achievements_2.name}}</ng-container>
+      </div>
 
       <div class="tech">
-        <ul *ngIf="isFrench"><li *ngFor="let tool of achievement_2.techFrench">{{tool}}</li></ul>
-        <ul *ngIf="!isFrench"><li *ngFor="let tool of achievement_2.tech">{{tool}}</li></ul>
+        <ul *ngIf="isFrench"><li *ngFor="let tool of achievements_2.techFrench">{{tool}}</li></ul>
+        <ul *ngIf="!isFrench"><li *ngFor="let tool of achievements_2.tech">{{tool}}</li></ul>
       </div>
     </div>
-  </div>
 </div>
