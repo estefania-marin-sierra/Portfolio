@@ -13,7 +13,7 @@ export interface DialogData {
 export const Projects = [
   {
     id: 1,
-    image: '../../assets/images/wedding_project.png', 
+    image: 'https://estefania-marin-sierra.github.io/Portfolio/assets/images/wedding_project.png', 
     link: 'https://nicolasfrechette91.github.io/nico_fanny_wedding_2020/home/index.html',
     name: 'Design for event website',
     description: 'Personalized UI design for a major event. The website was used to inform the event details as well as to create announcements, photo repository and souvenir details in one location.',
@@ -25,7 +25,7 @@ export const Projects = [
       description: 'This website was built to preserve memories while keeping a personalized and creative style throughout the website',
       tasks: ['Personalized UI design', 'Usable UI for desktop and mobile', 'Design adaptation based on owner personality/interest', 'Support 3 languages (English / French / Spanish)'],
       images:'',
-      video:'../../assets/images/website.mp4',
+      video:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/website.mp4',
       titleFrench: 'Site internet de mon mariage',
       descriptionFrench: "Cela a été construit pour préserver de beaux souvenirs de mon mariage et comme un moyen créatif d'informer les invités avec les nouvelles de l'événement.",
       tasksFrench: ["Développer le site Web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"],
