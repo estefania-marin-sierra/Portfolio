@@ -19,7 +19,11 @@
         <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACTEZ</button>
       </li>
       <li *ngIf="isFrench">
-        <button class="profile-link header-button-last" (click)="ScrollTo('contact-section')">EN</button>
+        <button class="header-button-last">
+          <a class="header-button-last" href="https://estefania-marin-sierra.github.io/Portfolio/">
+            EN
+          </a>
+        </button>
       </li>
       <li *ngIf="!isFrench">
         <button class="profile-link header-button" (click)="ScrollTo('skills-section')">SKILLS</button>
@@ -34,7 +38,11 @@
         <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACT</button>
       </li>
       <li *ngIf="!isFrench">
-        <button class="profile-link header-button-last" (click)="ScrollTo('contact-section')">FR</button>
+        <button class="header-button-last">
+          <a class="header-button-last" href="https://estefania-marin-sierra.github.io/Portfolio/?lang=fr">
+            FR
+          </a>
+        </button>
       </li>
     </ul>
   </nav>
