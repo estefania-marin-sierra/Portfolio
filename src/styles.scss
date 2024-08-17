@@ -63,6 +63,10 @@ svg:hover {
   font-family: 'Inter Variable', sans-serif !important;
 }
 
+.mat-mdc-outlined-button {
+  border:none !important;
+}
+
 .more-info-button {
   margin-right: 16px;
   border-radius: 10px;
@@ -118,7 +122,7 @@ svg:hover {
   .mat-mdc-outlined-button {
     border:none !important;
   }
-  
+
   .mat-mdc-outlined-button.mat-accent {
     font-size: 12px !important;
     font-weight: 600 !important;
