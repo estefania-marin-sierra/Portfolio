@@ -23,25 +23,30 @@ export const achievements_1 = [
       `Génération d'informations marketing utilisées par les MSL et les représentants commerciaux`]
   },
   {
-    icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/presentation.svg',
-    name: 'Communication',
-    tech: ['Multidisciplinary communication', 'Plan presentation to C-level stakeholders', 'Product and service pitch', 'Triaging', 'Client escalation management'],
-    nameFrench: 'Communication orale',
-    techFrench: ['Communication avec des équipes pluridisciplinaires', 'Présentation de plans aux collaborateurs de niveau C', 'Lancement des produits et services', 'Triage', 'Gestion de communication avec les clients']
+    icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/report.svg',
+    name: 'Medical device PSURs',
+    tech: ['Establishment of a strategy for the introduction of yearly safety reports for medical devices',
+      'Management of deliverables for timely completion within newly established regulation',
+      'Establishment of a team of stakeholders to retrieve information from 50+ manufacturing sites worldwide',
+      'Team management of medical writters and quality reviewers',
+      'Regulatory support for the comprehensive introduction of new Health Canada requirements'],
+    nameFrench: 'PSUR de dispositifs médicaux',
+    techFrench: [`Mise en place d'une stratégie pour l'introduction de rapports annuels de sécurité pour les dispositifs médicaux`,
+      `Gestion des livrables pour une exécution dans les délais dans le cadre de la réglementation nouvellement établie`,
+      `Mise en place d'une équipe de parties prenantes pour récupérer des informations sur plus de 50 sites de fabrication dans le monde`,
+      `Soutien réglementaire pour l’introduction complète des nouvelles exigences de Santé Canada`]
   },
   {
-    icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/project.svg',
-    name: 'Project management',
-    tech: ['Projection project plan', 'Agile (Kanban, Crytsal, Nexus, Scrumban, Scrum)', 'Scrum master', 'Waterfall', 'Lean management'],
-    nameFrench: 'Gestion de projet',
-    techFrench: ['Plan de projet', 'Agile (Kanban, Crytsal, Nexus, Scrumban, Scrum)', 'Scrum master', 'Gestion de cascade', 'Lean management']
+    icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/manufacturing.svg',
+    name: 'Record-time tech transfer',
+    tech: ['Management of tech transfer for a project with a first batch manufacturing within 3 months from quote signature (industry standard is 6 months)',
+      'Timely milestone attainment within budget as initially forecasted as per client regulatory submission strategy',
+      'Manufacturing line creative troubleshooting for the fast and effective new technology acquisition',
+      'Management of record-time release of clinical batches of <30 days (industry standard is 60 days)'],
+    nameFrench: 'Transfert de technologie en un temps record',
+    techFrench: [`Gestion du transfert de technologie pour un projet avec une première fabrication en série dans un délai de 3 mois à compter de la signature du contrat (la norme industrielle est de 6 mois)`,
+      `Atteinte des objectifs dans les délais impartis et dans les limites du budget initialement prévu conformément à la stratégie de soumission réglementaire du client`,
+      `Résolution créative de problèmes de chaîne de fabrication pour une acquisition rapide et efficace de nouvelles technologies`,
+      `Gestion de la libération des lots cliniques dans des délais record de < 30 jours (la norme industrielle est de 60 jours)`]
   },
-  {
-    icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/business-development.svg',
-    name: 'Business development and customer service',
-    tech: ['Client management', 'Client proposals, RFI, RFP and contracts', 'Development of marketing strategies based on market trends', 'Customer escalations', 'Formulation of business plans to achieve objectives'],
-    nameFrench: 'Développement des affaires et service à la clientèle',
-    techFrench: ['Techniques de ventes centrées sur le client', 'Qualification des prospects', 'Élaboration de RFI, RFP et contrats', 'Élaboration de stratégies marketing en fonction des tendances du marché', 'Gestion des réclamations de clients', `Élaboration de plans d'affaires pour atteindre des objectifs`]
-  },
-
 ];
