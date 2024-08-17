@@ -15,23 +15,8 @@
       </div>
 
       <div class="tech">
-        <ul *ngIf="isFrench"><li *ngFor="let tool of achievements_1.techFrench">{{tool}}</li></ul>
-        <ul *ngIf="!isFrench"><li *ngFor="let tool of achievements_1.tech">{{tool}}</li></ul>
+          <div *ngIf="isFrench"><p *ngFor="let tool of achievements_1.techFrench">{{tool}}</p></div>
+          <div *ngIf="!isFrench"><p *ngFor="let tool of achievements_1.tech">{{tool}}</p></div>
+        </div>
       </div>
-    </div>
   </div>
-
-  <div class="container-achievements">
-    <div class="container-achievement" *ngFor="let achievements_2 of achievements2">
-      <div><img src={{achievements_2.icon}} alt={{achievements_2.name}} /></div>
-      <div class="achievements-name">
-        <ng-container *ngIf="isFrench">{{achievements_2.nameFrench}}</ng-container>
-        <ng-container *ngIf="!isFrench">{{achievements_2.name}}</ng-container>
-      </div>
-
-      <div class="tech">
-        <ul *ngIf="isFrench"><li *ngFor="let tool of achievements_2.techFrench">{{tool}}</li></ul>
-        <ul *ngIf="!isFrench"><li *ngFor="let tool of achievements_2.tech">{{tool}}</li></ul>
-      </div>
-    </div>
-</div>
