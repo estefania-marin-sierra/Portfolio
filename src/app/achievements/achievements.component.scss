@@ -14,13 +14,17 @@ img {
   align-items: left;
 }
 
+.achievements-name {
+  text-align: left !important;
+}
+
 .container-achievements {
   display: inline-grid;
-  grid-template-columns: 20% 30% 1fr;
+  grid-template-columns: 10% 30% 1fr;
   gap: 4px;
   margin: 32px 24px 16px 24px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .container-achievement {

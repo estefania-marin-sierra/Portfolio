@@ -64,9 +64,10 @@ svg:hover {
 }
 
 .more-info-button {
-  border: 1px solid #f76ce936;
-  border-radius: 1px;
   margin-right: 16px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color:#cb80b6;
 }
 
 .more-info-button:hover{
@@ -114,8 +115,11 @@ svg:hover {
     width: 100%;
   }
 
+  .mat-mdc-outlined-button {
+    border:none !important;
+  }
+  
   .mat-mdc-outlined-button.mat-accent {
-    color: #434049 !important;
     font-size: 12px !important;
     font-weight: 600 !important;
     padding-left: 8px !important;
