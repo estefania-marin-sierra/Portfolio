@@ -64,7 +64,7 @@
 
       <div class="d-flex">
         <div class="content-image" *ngIf="data.images[index]">
-          <img *ngFor="let image of data.images" src={{image}}>
+          <img src={{data.images[index]}}>
         </div>
       </div>
 
@@ -74,9 +74,6 @@
         </div>
       </div>
     </div>
-    
-
-    
   </div>  
 </mat-dialog-content>
 
