@@ -3,50 +3,76 @@
   <ng-container *ngIf="!isFrench">{{data.title}}</ng-container>
 </h2>
 
-<mat-dialog-content>
+<mat-dialog-content *ngIf="data.tasks.length === 1">
       <div class="content-description-title" *ngIf="data.description"><strong>Description</strong></div>
 
-    <div class="content-description" *ngIf="isFrench && data.description">{{data.descriptionFrench}}</div>
-    <div class="content-tasks-title" *ngIf="isFrench && data.description"><strong>Fonctionnalités</strong></div>
-    <div class="content-task" *ngIf="isFrench && data.description">
-      <ul class="content-tasks-list">
-        <li *ngFor="let task of data.tasksFrench">{{task}}</li>
-      </ul>
-    </div>
-
-    <div class="content-description" *ngIf="!isFrench && data.description">{{data.description}}</div>
-    <div class="content-tasks-title" *ngIf="!isFrench && data.tasks"><strong>Features</strong></div>
-    <div class="content-task" *ngIf="!isFrench && data.description">
-      <ul class="content-tasks-list">
-        <li *ngFor="let task of data.tasks">{{task}}</li>
-      </ul>
-    </div>
-
-    <div class="content-image" *ngFor="let image of data.images">
-      <img src={{image}}>
-    </div>
-   
-    <div class="content">
-      <div class="content-video_container" *ngIf="data.video && data.description">
-        <iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="content-description" *ngIf="isFrench && data.description">{{data.descriptionFrench}}</div>
+      <div class="content-tasks-title" *ngIf="isFrench && data.tasks"><strong>Fonctionnalités</strong></div>
+      <div class="content-task" *ngIf="isFrench && data.tasks">
+        <ul class="content-tasks-list">
+          <ng-container *ngFor="let tasksFR of data.tasksFrench">
+            <li *ngFor="let taskFR of tasksFR">{{taskFR}}</li>
+          </ng-container>
+        </ul>
       </div>
-    </div>
+  
+      <div class="content-description" *ngIf="!isFrench && data.description">{{data.description}}</div>
+      <div class="content-tasks-title" *ngIf="!isFrench && data.tasks"><strong>Features</strong></div>
+      <div class="content-task" *ngIf="!isFrench && data.tasks">
+        <ul class="content-tasks-list">
+          <ng-container *ngFor="let tasks of data.tasks">
+            <li *ngFor="let task of tasks">{{task}}</li>
+          </ng-container>
+        </ul>
+      </div>
+  
+      <div class="content-image" *ngIf="data.tasks">
+        <img *ngFor="let image of data.images" src={{image}}>
+      </div>
+     
+      <div class="content">
+        <div class="content-video_container" *ngIf="data.video && data.description">
+          <ng-container *ngFor="let video of data.video">
+            <iframe class="content-video" [src]="video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </ng-container>   
+        </div>
+      </div>
+</mat-dialog-content>
 
-    <div class="content-description-title" *ngIf="data.description_2"><strong>Description</strong></div>
+<mat-dialog-content *ngIf="data.tasks.length > 1">
+  <div class="content-description-title" *ngIf="data.description"><strong>Description</strong></div>
 
-    <div class="content-tasks-title" *ngIf="isFrench && data.tasksFrench_2"><strong>Fonctionnalités</strong></div>
-    <div class="content-task" *ngIf="isFrench&& data.tasksFrench_2">
-      <ul class="content-tasks-list">
-        <li *ngFor="let task of data.tasksFrench_2">{{task}}</li>
-      </ul>
-    </div>
+  <div class="content-description" *ngIf="isFrench && data.description">{{data.descriptionFrench}}</div>
+  <div class="content-tasks-title" *ngIf="isFrench && data.tasks"><strong>Fonctionnalités</strong></div>
+  <div class="content-task" *ngIf="isFrench && data.tasks">
+    <ul class="content-tasks-list">
+      <ng-container *ngFor="let tasksFR of data.tasksFrench">
+        <li *ngFor="let taskFR of tasksFR">{{taskFR}}</li>
+      </ng-container>
+    </ul>
+  </div>
 
-    <div class="content-tasks-title" *ngIf="!isFrench && data.tasks_2"><strong>Features</strong></div>
-    <div class="content-task" *ngIf="!isFrench && data.tasks_2">
-      <ul class="content-tasks-list">
-        <li *ngFor="let task of data.tasks_2">{{task}}</li>
-      </ul>
+  <div class="content-description" *ngIf="!isFrench && data.description">{{data.description}}</div>
+  <div class="content-tasks-title" *ngIf="!isFrench && data.tasks"><strong>Features</strong></div>
+  <div class="content-task" *ngIf="!isFrench && data.tasks">
+    <ul class="content-tasks-list">
+      <ng-container *ngFor="let tasks of data.tasks">
+        <li *ngFor="let task of tasks">{{task}}</li>
+      </ng-container>
+    </ul>
+  </div>
+
+  <div class="content-image" *ngIf="data.tasks">
+    <img *ngFor="let image of data.images" src={{image}}>
+  </div>
+ 
+  <div class="content">
+    <div class="content-video_container" *ngIf="data.video && data.description">
+      <ng-container *ngFor="let video of data.video">
+        <iframe class="content-video" [src]="video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </ng-container>   
     </div>
+  </div>
 </mat-dialog-content>
 
 <mat-dialog-actions>

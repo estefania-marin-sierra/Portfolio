@@ -1,18 +1,12 @@
 export interface DialogData {
   title: '',
   description: '',
-  tasks: [],
-  images: '',
-  video: '',
+  tasks: [[]],
+  images: [],
+  video: [],
   titleFrench: '',
   descriptionFrench: '',
-  tasksFrench: '',
-  description_2: '',
-  tasks_2:'',
-  video_2:'',
-  titleFrench_2: '',
-  descriptionFrench_2: '',
-  tasksFrench_2: '',
+  tasksFrench: [[]],
 }
 
 /* personal projects*/
@@ -29,12 +23,12 @@ export const Projects = [
     dialog: {
       title: 'Event website',
       description: 'This website was built to preserve memories while keeping a personalized and creative style throughout the website',
-      tasks: ['Personalized UI design', 'Usable UI for desktop and mobile', 'Design adaptation based on owner personality/interest', 'Support 3 languages (English / French / Spanish)'],
-      images:'',
-      video:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/website.mp4',
+      tasks: [['Personalized UI design', 'Usable UI for desktop and mobile', 'Design adaptation based on owner personality/interest', 'Support 3 languages (English / French / Spanish)']],
+      images:[''],
+      video:['https://estefania-marin-sierra.github.io/Portfolio/assets/images/website.mp4'],
       titleFrench: 'Site internet de mon mariage',
       descriptionFrench: "Cela a été construit pour préserver de beaux souvenirs de mon mariage et comme un moyen créatif d'informer les invités avec les nouvelles de l'événement.",
-      tasksFrench: ["Développer le site Web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"],
+      tasksFrench: [["Développer le site Web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"]],
     }
   },
   {
@@ -47,12 +41,12 @@ export const Projects = [
     dialog: {
       title: 'Automatic creation of high-level dashboards',
       description: 'Generation and update of information from main project plan and their subsequent reports',
-      tasks: ['Self-retrieval of data', 'Auto-update', 'Modification of visual features as the status gets modified', 'Chart creation for visual project assessment'],
-      images:'',
-      video:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/dashboard.mp4',
+      tasks: [['Self-retrieval of data', 'Auto-update', 'Modification of visual features as the status gets modified', 'Chart creation for visual project assessment']],
+      images:[''],
+      video:['https://estefania-marin-sierra.github.io/Portfolio/assets/images/dashboard.mp4'],
       titleFrench: 'Création automatique tableaux de bord des résumés',
       descriptionFrench: "Génération et mettre à jour des informations du plan principal du projet et ses rapports associés",
-      tasksFrench: ["Auto-récupération des données","Mise à jour automatique","Modification des caractéristiques visuelles au fur et à mesure que le statut des tâches est modifié","Création de graphiques pour l'évaluation visuelle du projet"],
+      tasksFrench:[["Auto-récupération des données","Mise à jour automatique","Modification des caractéristiques visuelles au fur et à mesure que le statut des tâches est modifié","Création de graphiques pour l'évaluation visuelle du projet"]],
     }
   },
   {
@@ -65,12 +59,12 @@ export const Projects = [
     dialog: {
       title: 'LALALA',
       description: 'Hello',
-      tasks_2: ['Self-retrieval of data', 'Auto-update', 'Modification of visual features as the status gets modified', 'Chart creation for visual project assessment'],
-      images:'',
-      video_2:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/dashboard.mp4',
+      tasks:[['Self-retrieval of data', 'Auto-update', 'Modification of visual features as the status gets modified', 'Chart creation for visual project assessment'], ['LALALALA']],
+      images:['',''],
+      video:['https://estefania-marin-sierra.github.io/Portfolio/assets/images/dashboard.mp4', 'https://estefania-marin-sierra.github.io/Portfolio/assets/images/dashboard.mp4'],
       titleFrench: 'Création automatique tableaux de bord des résumés',
       descriptionFrench: "Génération et mettre à jour des informations du plan principal du projet et ses rapports associés",
-      tasksFrench_2: ["Auto-récupération des données","Mise à jour automatique","Modification des caractéristiques visuelles au fur et à mesure que le statut des tâches est modifié","Création de graphiques pour l'évaluation visuelle du projet"],
+      tasksFrench: [["Auto-récupération des données","Mise à jour automatique","Modification des caractéristiques visuelles au fur et à mesure que le statut des tâches est modifié","Création de graphiques pour l'évaluation visuelle du projet"], ["LALALALA"]],
     }
   },
 ];
