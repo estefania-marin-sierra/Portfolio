@@ -116,6 +116,10 @@ svg:hover {
   font-weight: 200;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 // Mobile Exclusive Adjustment
 @media (max-width: 768px) {
   .cdk-overlay-pane {
