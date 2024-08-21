@@ -33,7 +33,9 @@
       <div class="content">
         <div class="content-video_container" *ngIf="data.video && data.description">
           <ng-container *ngFor="let video of data.video">
-            <iframe class="content-video" [src]="video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video #videoElement class="content-video" controls>
+              <source [src]="video" type="video/mp4">
+            </video>
           </ng-container>   
         </div>
       </div>
@@ -70,7 +72,9 @@
 
       <div class="content w-100"  *ngIf="data.video[index]">
         <div class="content-video_container">
-            <iframe #videoIframe class="content-vi" [src]="data.video[index] | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+          <video #videoElement class="content-vi" controls>
+            <source [src]="data.video[index]" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
