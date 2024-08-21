@@ -70,7 +70,7 @@
 
       <div class="content w-100"  *ngIf="data.video[index]">
         <div class="content-video_container">
-            <iframe class="content-vi" [src]="data.video[index] | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            <iframe #videoIframe class="content-vi" [src]="data.video[index] | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
         </div>
       </div>
     </div>

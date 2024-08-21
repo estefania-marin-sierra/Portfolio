@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   font-size: 18px !important;
-  align:left;
+  text-align:left;
 }
 
 .content-video_container{
@@ -32,7 +32,6 @@
   align-items: center;
   width: 100%;
   margin-bottom: 32px;
-  height: auto; /* Auto height based on content */
 }
 
 .content-image{
@@ -58,9 +57,7 @@
 
 .content-vi {
   width: 80%;
-  height: auto;
   border: 10px solid black;
-  object-fit: cover;
 }
 
 .content-video {
