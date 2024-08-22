@@ -71,7 +71,7 @@ mat-card-content {
 @media(max-width:768px) {
   .container {
     flex-direction: column;
-    margin: 24px 0px 24px 0px;
+    margin: 24px 0px 0px 0px;
   }
 
   .custom-card {
@@ -84,5 +84,13 @@ mat-card-content {
     padding-left: 16px;
     font-size: 14px;
     margin-top: 0px;
+  }
+
+  .custom-hello {
+    margin-bottom:10px;
+  }
+
+  .custom-sentence {
+    margin-bottom:10px;
   }
 }

@@ -46,16 +46,34 @@
 
   <div class="content-description" *ngIf="isFrench && data.description">{{data.descriptionFrench}}</div>
   <div class="content-tasks-title" *ngIf="isFrench && data.tasks"><strong>Fonctionnalités</strong></div>
-  <div class="content-task" *ngIf="isFrench && data.tasks">
-    <ul class="content-tasks-list">
-      <ng-container *ngFor="let tasksFR of data.tasksFrench">
-        <li *ngFor="let taskFR of tasksFR">{{taskFR}}</li>
-      </ng-container>
-    </ul>
+ 
+  <div class="content-task" *ngIf="isFrench && data.tasksFrench">
+    <div class="d-flex" *ngFor="let chunk of data.tasksFrench; index as index">
+      <div class="d-flex">
+        <ul class="content-tasks-list">
+            <li *ngFor="let taskFrench of chunk">{{taskFrench}}</li>
+        </ul>
+      </div>
+
+      <div class="d-flex" *ngIf="data.images[index]">
+        <div class="content-image">
+          <img class="image_in" src={{data.images[index]}}>
+        </div>
+      </div>
+
+      <div class="content w-100"  *ngIf="data.video[index]">
+        <div class="content-video_container">
+          <video #videoElement class="content-vi" controls>
+            <source [src]="data.video[index]" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="content-description" *ngIf="!isFrench && data.description">{{data.description}}</div>
   <div class="content-tasks-title" *ngIf="!isFrench && data.tasks"><strong>Features</strong></div>
+  
   <div class="content-task" *ngIf="!isFrench && data.tasks">
     <div class="d-flex" *ngFor="let chunk of data.tasks; index as index">
       <div class="d-flex">

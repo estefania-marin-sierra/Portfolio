@@ -59,7 +59,7 @@ li {
   }
 
   .container-skills {
-    display: grid;
+    display: unset;
     grid-template-columns: auto auto;
     grid-gap: 4px;
     margin: 16px 8px;
@@ -73,5 +73,9 @@ li {
   .skill-name{
     margin: 0;
     text-align: center;
+  }
+  
+  .list{
+    width: 100%;
   }
 }
