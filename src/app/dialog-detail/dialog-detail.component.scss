@@ -1,3 +1,6 @@
+//large screen
+@media(min-width:780px) {
+
 .content-description {
   padding-bottom: 24px;
 }
@@ -27,9 +30,8 @@
 }
 
 .content-video_container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: ruby-text;
+  justify-content: left;
   width: 100%;
   margin-bottom: 32px;
 }
@@ -62,6 +64,7 @@
 
 .content-video {
   height: auto;
+  width: 80%;
   border: 10px solid;
   border-color: black;
 }
@@ -76,9 +79,42 @@
   background-color:#cb6ed3;
 }
 
-@media only screen and (min-width:768px) {
-  .content-video{
-    height:315px;
-    width:560px;
+}
+
+// Mobile Exclusive
+@media(max-width:768px){
+
+  .content-video {
+    width: 100% !important;
+    border: 3px solid;
+    border-color: black;
+  }
+
+  .d-flex{
+    display: unset !important;
+  }
+
+  .content-description{
+    margin-bottom: 10px;
+  }
+
+  .button-close {
+    border-radius: 3px;
+    border: 1px solid;
+    border-color:#cb80b6;
+  }
+
+  .image_in {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 3px solid;
+    border-color: black;
+  }
+
+  .content-vi {
+    width: 100%;
+    border: 3px solid black;
   }
 }
