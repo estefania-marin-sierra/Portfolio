@@ -18,8 +18,8 @@ export const Projects = [
     name: 'Design for event website',
     description: 'Personalized UI design for a major event. The website was used to inform the event details as well as to create announcements, photo repository and souvenir details in one location.',
     linkFrench: 'https://nicolasfrechette91.github.io/nico_fanny_wedding_2020/home/index_fr.html',
-    nameFrench: "Creation d'un site web d'événement",
-    descriptionFrench: "Conception d'interface utilisateur personnalisée pour un événement majeur. Le site Web a été utilisé pour informer les détails de l'événement ainsi que pour créer des annonces, un référentiel de photos et des souvenirs en un seul endroit.",
+    nameFrench: "Création d'un site web d'événement",
+    descriptionFrench: "Conception d'une interface utilisateur personnalisée pour un événement majeur. Le site web a été utilisé pour fournir les détails de l'événement ainsi que pour créer des annonces, un référentiel de photos et de souvenirs en un seul endroit.",
     dialog: {
       title: 'Event website',
       description: 'This website was built to preserve memories while keeping a personalized and creative style throughout the website',
@@ -27,8 +27,8 @@ export const Projects = [
       images:[''],
       video:['https://estefania-marin-sierra.github.io/Portfolio/assets/images/website.mp4'],
       titleFrench: 'Site internet de mon mariage',
-      descriptionFrench: "Cela a été construit pour préserver de beaux souvenirs de mon mariage et comme un moyen créatif d'informer les invités avec les nouvelles de l'événement.",
-      tasksFrench: [["Développer le site Web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"]],
+      descriptionFrench: "Ce site a été construit pour préserver de beaux souvenirs de mon mariage et pour informer les invités des détails de l'événement de manière créative.",
+      tasksFrench: [["Développer le site web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"]],
     }
   },
   {
@@ -45,8 +45,8 @@ export const Projects = [
       images:[''],
       video:['https://estefania-marin-sierra.github.io/Portfolio/assets/images/dashboard.mp4'],
       titleFrench: 'Création automatique tableaux de bord des résumés',
-      descriptionFrench: "Génération et mettre à jour des informations du plan principal du projet et ses rapports associés",
-      tasksFrench:[["Auto-récupération des données","Mise à jour automatique","Modification des caractéristiques visuelles au fur et à mesure que le statut des tâches est modifié","Création de graphiques pour l'évaluation visuelle du projet"]],
+      descriptionFrench: "Génération et mise à jour des informations du plan principal du projet et ses rapports associés",
+      tasksFrench:[["Récupération automatique des données","Mise à jour automatique","Modification des caractéristiques visuelles au fur et à mesure que le statut des tâches est modifié","Création de graphiques pour l'évaluation visuelle du projet"]],
     }
   },
   {
@@ -55,7 +55,7 @@ export const Projects = [
     name: 'Project plan template with automatization',
     description: "Creation of a high-level template for project plans. It included all automatization and trackers for self follow-up and reporting.",
     nameFrench: "Modèle de plan de projet avec automatisation",
-    descriptionFrench: "Création d'un modèle de haut niveau pour les plans de projet. Il comprenait toutes les automatisations et les outils de suivi pour l'auto-suivi et le reporting.",
+    descriptionFrench: "Création d'un modèle de haut niveau pour les plans de projet. Comprenant toutes les automatisations et les outils de suivi pour l'auto-suivi et le reporting.",
     dialog: {
       title: 'Automated-tracking project plan',
       description: "Creation of a template with all major common activities for a tech transfer and their average timeline. Included several features for self-tracking and flagging tasks, payments and the project's overall status",
@@ -70,12 +70,12 @@ export const Projects = [
               'https://estefania-marin-sierra.github.io/Portfolio/assets/images/comment.png',],
       video:['','','','', 'https://estefania-marin-sierra.github.io/Portfolio/assets/images/subfolders.mp4'],
       titleFrench: 'Plan de projet avec suivi automatisé',
-      descriptionFrench: "Création d'un modèle avec toutes les principales activités courantes pour un transfert de technologie et leur calendrier moyen. Inclusion de plusieurs fonctionnalités pour le suivi automatique et le signalement des tâches, des paiements et du statut général du projet",
-      tasksFrench: [["Indication de l'état de faisabilité d'un projet", "Mise à jour automatique du statut en fonction du ratio de tâches marquées comme en retard ou à risque"], 
+      descriptionFrench: "Création d'un modèle intégrant toutes les principales activités courantes pour un transfert de technologie, ainsi que leur calendrier moyen. Inclusion de plusieurs fonctionnalités pour le suivi automatique et le signalement des tâches, des paiements et du statut général du projet",
+      tasksFrench: [["Indication de l'état de faisabilité du projet", "Mise à jour automatique du statut en fonction du ratio de tâches marquées comme étant en retard ou à risque"], 
                     ["Signalisation automatique des tâches dont la date d'échéance est inférieure à 10 jours", "Signalisation automatique des tâches en retard", "Signalisation automatique lorsque des tâches sont mises en attente"],
-                    ["Mise à jour automatique du statut de la tâche","Statut de la tâche basé sur le plan initial","Statut de la tâche basé sur le pourcentage d'achèvement atteint"],
+                    ["Mise à jour automatique du statut des tâches","Statut des tâches basé sur le plan initial","Statut des tâches basé sur le pourcentage d'achèvement atteint"],
                     ["Utilisation de la fonctionnalité de dernier commentaire pour suivre les commentaires historiques", "Mise à jour du plan principal du projet avec uniquement les commentaires fournis au cours des 10 derniers jours pour une évaluation facile", "Création d'un rapport automatisé pour les derniers commentaires"],
-                    ["Création de rapports multiples alimentés automatiquement à partir du plan de projet principal", "Génération de rapports RAID en fonction de l'état du projet", "Alimentation automatique des éléments du plan de projet dans les feuilles enfants", "Mise à jour automatique des rapports et feuilles enfants"]],
+                    ["Création de rapports multiples alimentés automatiquement à partir du plan de projet principal", "Génération de rapports RAID en fonction de l'état du projet", "Alimentation automatique des éléments du plan de projet dans les tableaux enfants", "Mise à jour automatique des rapports et ces tableaux enfants"]],
     }
   },
 ];

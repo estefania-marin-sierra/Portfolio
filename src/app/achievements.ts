@@ -8,8 +8,8 @@ export const achievements_1 = [
       'Generation of a customizable API for the search of drug interactions and adverse events'],
     nameFrench: 'Base de données sur les événements indésirables',
     techFrench: [`Gestion stratégique pour la création d'une base de données exhaustive sur les événements indésirables basée sur la littérature`,
-      `Adaptation de la terminologie ICD-10 et MedDRA pour la creation d'une recherche facile`,
-      `Génération de un API personnalisable pour la recherche d'interactions médicamenteuses et d'événements indésirables`]
+      `Adaptation de la terminologie ICD-10 et MedDRA pour la création d'une recherche facile`,
+      `Génération d'une API personnalisable pour la recherche d'interactions médicamenteuses et d'événements indésirables`]
   },
   {
     icon:'https://estefania-marin-sierra.github.io/Portfolio/assets/images/prescription.svg',
