@@ -58,8 +58,10 @@
 }
 
 .content-vi {
+  height: auto;
   width: 80%;
-  border: 10px solid black;
+  border: 10px solid;
+  border-color: black;
 }
 
 .content-video {
@@ -78,7 +80,6 @@
 .button-close:hover {
   background-color:#cb6ed3;
 }
-
 }
 
 // Mobile Exclusive

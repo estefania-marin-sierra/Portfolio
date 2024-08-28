@@ -26,9 +26,9 @@ export const Projects = [
       tasks: [['Personalized UI design', 'Usable UI for desktop and mobile', 'Design adaptation based on owner personality/interest', 'Support 3 languages (English / French / Spanish)']],
       images:[''],
       video:['https://estefania-marin-sierra.github.io/Portfolio/assets/images/website.mp4'],
-      titleFrench: 'Site internet de mon mariage',
-      descriptionFrench: "Ce site a été construit pour préserver de beaux souvenirs de mon mariage et pour informer les invités des détails de l'événement de manière créative.",
-      tasksFrench: [["Développer le site web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"]],
+      titleFrench: `Site web d'événement`,
+      descriptionFrench: "Ce site Web a été créé pour préserver les souvenirs tout en conservant un style personnalisé et créatif.",
+      tasksFrench: [[`Conception d'interface utilisateur personnalisée`, `Interface utilisable pour ordinateur de bureau et mobile`, `Adaptation de la conception en fonction de la personnalité et des intérêts du propriétaire du site`, `Prise en charge de 3 langues (anglais/français/espagnol)`]],
     }
   },
   {
